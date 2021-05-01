@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.5;
+    background-color: #bbf085;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto
+}
+
+.dark {
+    color: whitesmoke;
+    background-color: #2c2b2b;
+}
+
+.photo {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 4px 5px 7px black
+}
+
+.greyBackground {
+    background-color: rgb(156, 154, 154);
+}
+
+.header {
+    color: green;
+    background-color: white;
+    text-align: center;
+    border-radius: 40px;
+    margin: 35px 50px;
+    font-size: 32px;
+}
+
+.headerAboutMe {
+    color: green;
+    text-shadow: 2px 3px 5px black;
+}

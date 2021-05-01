@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja pierwsza strona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <header>
+        <h1 class="header">Parę słów o mnie
+        </h1>
+    </header>
+    <nav>
+        <ul class="navigation__list">
+            <li><a class="navigation__link" href="#O-mnie">O mnie</a></li>
+            <li><a class="navigation__link" href="#W-wolnym-czasie">W wolnym czasie</a></li>
+            <li><a class="navigation__link" href="#Ulubieni-aktorzy">Ulubieni aktorzy</a></li>
+            <li><a class="navigation__link" href="#Ulubione-filmy">Ulubione filmy</a></li>
+        </ul>
+    </nav>
+
+    <p>
+        <img class="photo" width="200" src="https://i.postimg.cc/qRhqxWCT/myPhoto.jpg" alt="Michał Stasiak">
+    </p>
+    <main>
+        <section id="O-mnie">
+            <h2 class=headerAboutMe>
+                Cześć jestem Michał!
+            </h2>
+            <p>
+                Mam 32 lata i pochodzę z malowniczej miejscowości pod Lublinem, z wykształcenia jestem kucharzem, mimo
+                że w
+                tym
+                zawodzie dawno już nie pracuję to wciąż uwielbiam gotować. Zanim trafiłem do obecnej pracy byłem przez
+                parę
+                lat
+                przedstawicielem handlowym.
+                Już od dawna myślałem o zmianie branży na IT tylko nie wiedziałem od czego zacząć, aż tu któregoś
+                pięknego
+                dnia
+                zobaczyłem reklamę <strong><i>YouCode</i></strong> i pomyślałem: przyszedł w końcu czas na zmiany,
+                zapisałem
+                się
+                na <b>LIVE</b>, a resztę roboty zrobił <b>Krzysiek</b> i jestem tu gdzie jestem i wcale tego nie żąłuję
+                mimo, że
+                czeka mnie bardzo dużo ciężkiej pracy.</p>
+        </section>
+
+        <p> <button class="changeBackground">Zmień kolor tła
+            </button>
+
+        </p>
+        <section id="W-wolnym-czasie">
+            <h2>
+                W wolnym czasie...
+            </h2>
+            <p>
+                W wolnej chwili oglądam filmy/seriale, rozwiązuje krzyżówki, a gdy tylko przyjdzie wiosna wskakuje na
+                rower i
+                zakładam rolki. Czasami jak szef da mi urlop to staram się pojechać w góry.
+            </p>
+
+        </section>
+        <p>
+            <button class="changeMotiv">Włącz <span class="themeName">ciemny</span> motyw</button>
+        </p>
+        <section id="Ulubieni-aktorzy">
+            <div class="container">
+                <table class="table">
+                    <caption class="table__caption">Moi ulubieni aktorzy</caption>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="col">Aktor</th>
+                        <th class="table__cell table__cell--header" scope="col">Data urodzenia</th>
+                        <th class="table__cell table__cell--header" scope="col">Kraj pochodzenia</th>
+                        <th class="table__cell table__cell--header" scope="col">Linki</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Russell Crowe</th>
+                        <td class="table__cell">07 kwietnia 1964</td>
+                        <td class="table__cell">Nowa Zelandia</td>
+                        <td class="table__cell"><a rel="noreferrer noopener" target="_blank"
+                                href="https://www.filmweb.pl/person/Russell+Crowe-380"
+                                title="Russell Crowe na Filmweb">Filmweb</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Nicolas Cage</th>
+                        <td class="table__cell">07 stycznia 1964</td>
+                        <td class="table__cell" rowspan="3">USA</td>
+                        <td class="table__cell"><a rel="noreferrer noopener" target="_blank"
+                                href="https://www.filmweb.pl/person/Nicolas+Cage-15"
+                                title="Nicolas Cage na Filmweb">Filmweb</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Chris Pratt</th>
+                        <td class="table__cell">21 czerwca 1979</td>
+
+                        <td class="table__cell"><a rel="noreferrer noopener" target="_blank"
+                                href="https://www.filmweb.pl/person/Chris+Pratt-134764"
+                                title="Chris Pratt na Filmweb">Filmweb</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Adam Sandler</th>
+                        <td class="table__cell">09 września 1966</td>
+
+                        <td class="table__cell"><a rel="noreferrer noopener" target="_blank"
+                                href="https://www.filmweb.pl/person/Adam+Sandler-3916"
+                                title="Adam Sandler na Filmweb">Filmweb</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Liam Neeson</th>
+                        <td class="table__cell">07 czerwca 1952</td>
+                        <td class="table__cell">Irlandia Północna</td>
+                        <td class="table__cell"><a rel="noreferrer noopener" target="_blank"
+                                href="https://www.filmweb.pl/person/Liam+Neeson-74"
+                                title="Liam Neeson na Filmweb">Filmweb</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Jason Statham</th>
+                        <td class="table__cell">26 lipca 1967</td>
+                        <td class="table__cell">Anglia</td>
+                        <td class="table__cell"><a rel="noreferrer opener" target="_blank"
+                                href="https://www.filmweb.pl/person/Jason+Statham-6552"
+                                title="Jason Statham na Filmweb">Filmweb</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="Ulubione-filmy">
+            <h2>Moje ulubione filmy:</h2>
+            <ul>
+                <li>
+                    Dramat historyczny:
+                    <ol>
+                        <li>Gladiator</li>
+                        <li>Braveheart - Waleczne serce</li>
+                    </ol>
+                </li>
+                <li>
+                    Akcja:
+                    <ol>
+                        <li>Strażnicy Galaktyki</li>
+                        <li>John Wick</li>
+
+                    </ol>
+                </li>
+                <li>
+                    Przygodowy:
+                    <ol>
+                        <li>Trzynasty Wojownik</li>
+                        <li>Władca Pierścieni - "Trylogia"</li>
+                    </ol>
+                </li>
+                <li>
+                    Sensacyjny:
+                    <ol>
+                        <li>
+                            Uprowadzona
+                        </li>
+                        <li>Ronin</li>
+                    </ol>
+                </li>
+                <li>
+                    Dramat:
+                    <ol>
+                        <li>Siedem dusz</li>
+                        <li>Leon Zawodowiec</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <hr>
+    <footer class="footer">
+        Kontakt:<br> e-mail: michal.stasiak@onet.pl<br>Tel:111-222-333
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.navigation__list {
+    list-style-type: none;
+}
+
+.navigation__link:hover {
+    color: blueviolet;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: black;
+}
