@@ -1,4 +1,4 @@
-console.log("Cześć!")
+console.log("Cześć wszystkim!")
 
 let changeColorButton = document.querySelector(".changeBackground");
 let body = document.querySelector(".body");
