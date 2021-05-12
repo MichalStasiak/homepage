@@ -1,17 +1,41 @@
-console.log("Cześć wszystkim!")
+{
+    const welcome = () => {
+        console.log("Cześć wszystkim!")
+    }
 
-let changeColorButton = document.querySelector(".js-changeBackground");
-let body = document.querySelector(".js-body");
-let changeMotiv = document.querySelector(".js-changeMotiv");
-let themeName = document.querySelector(".js-themeName");
 
-changeColorButton.addEventListener("click", () => {
-    body.classList.toggle("greyBackground");
-});
+    const onChangeMotivClick = () => {
+        const body = document.querySelector(".js-body");
+        const themeName = document.querySelector(".js-themeName");
 
-changeMotiv.addEventListener("click", () => {
-    body.classList.toggle("dark");
-    themeName.innerText = body.classList.contains("dark") ?
-        "jasny" : "ciemny";
+        body.classList.toggle("dark");
+        themeName.innerText = body.classList.contains("dark") ?
+            "jasny" : "ciemny";
 
-});
+    }
+
+    const onChangeBackgroundClick = () => {
+        const changeBackground = document.querySelector(".js-changeBackground");
+        const body = document.querySelector(".js-body");
+        body.classList.toggle("greyBackground");
+    }
+
+    const init = () => {
+
+        const changeMotiv = document.querySelector(".js-changeMotiv");
+        changeMotiv.addEventListener("click", onChangeMotivClick);
+        changeBackground.addEventListener("click", onChangeBackgroundClick);
+
+        welcome();
+
+    };
+
+    init();
+
+    
+
+
+    
+
+
+}
