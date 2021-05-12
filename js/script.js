@@ -15,7 +15,7 @@
     }
 
     const onChangeBackgroundClick = () => {
-        const changeBackground = document.querySelector(".js-changeBackground");
+        
         const body = document.querySelector(".js-body");
         body.classList.toggle("greyBackground");
     }
@@ -23,19 +23,21 @@
     const init = () => {
 
         const changeMotiv = document.querySelector(".js-changeMotiv");
+        const changeBackground = document.querySelector(".js-changeBackground");
+
         changeMotiv.addEventListener("click", onChangeMotivClick);
+        
         changeBackground.addEventListener("click", onChangeBackgroundClick);
 
-        welcome();
-
+       
     };
-
+    welcome();
     init();
 
-    
 
 
-    
+
+
 
 
 }
