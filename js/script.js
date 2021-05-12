@@ -1,9 +1,9 @@
 console.log("Cześć wszystkim!")
 
-let changeColorButton = document.querySelector(".changeBackground");
-let body = document.querySelector(".body");
-let changeMotiv = document.querySelector(".changeMotiv");
-let themeName = document.querySelector(".themeName");
+let changeColorButton = document.querySelector(".js-changeBackground");
+let body = document.querySelector(".js-body");
+let changeMotiv = document.querySelector(".js-changeMotiv");
+let themeName = document.querySelector(".js-themeName");
 
 changeColorButton.addEventListener("click", () => {
     body.classList.toggle("greyBackground");
